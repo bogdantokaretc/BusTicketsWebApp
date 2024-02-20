@@ -1,6 +1,5 @@
 # Bus Ticket Sales System Web App
 
----
 
 ## Investigation of Domain:
 
