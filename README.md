@@ -52,7 +52,8 @@ The bus ticket sales system is a web application designed to facilitate the purc
 4. **Booking:**
    - Attributes: user, bus schedule, seats booked, payment status.
 
-## Main Pages Mockups(:red_exclamation_mark:UNDER DEVELOPMENT):
+# :heavy_exclamation_mark: UNDER DEVELOPMENT
+## Main Pages Mockups:
 
 1. **Homepage:**
    - Includes search functionality and featured routes.
