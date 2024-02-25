@@ -18,7 +18,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\BusTickets.WebUI\BusTickets.WebUI.csproj" />
+    <ProjectReference Include="..\..\src\BusTickets.WebUI\BusTickets.WebUI.csproj" />
   </ItemGroup>
 
   <ItemGroup>
