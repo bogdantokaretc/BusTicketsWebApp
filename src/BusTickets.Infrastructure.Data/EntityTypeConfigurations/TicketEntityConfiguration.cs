@@ -14,7 +14,7 @@ namespace BusTickets.Infrastructure.Data.EntityTypeConfigurations
         public void Configure(EntityTypeBuilder<Ticket> builder)
         {
             builder.HasKey(t => t.Id);
-
+        
             builder.Property(t => t.PurchaseTime)
                    .HasDefaultValueSql("getdate()")
                    .ValueGeneratedOnAdd();
@@ -28,12 +28,6 @@ namespace BusTickets.Infrastructure.Data.EntityTypeConfigurations
             builder.HasOne(t => t.Bus)
                    .WithMany()
                    .HasForeignKey(t => t.BusId)
-                   .IsRequired()
-                   .OnDelete(DeleteBehavior.Restrict);
-
-            builder.HasOne(r => r.Route)
-                   .WithMany()
-                   .HasForeignKey(r => r.RouteId)
                    .IsRequired()
                    .OnDelete(DeleteBehavior.Restrict);
 

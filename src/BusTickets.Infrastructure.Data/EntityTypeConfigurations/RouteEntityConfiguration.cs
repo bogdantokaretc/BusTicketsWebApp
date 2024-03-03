@@ -19,7 +19,8 @@ namespace BusTickets.Infrastructure.Data.EntityTypeConfigurations
             builder.Property(r => r.ArrivalCity).IsRequired();
             builder.Property(r => r.DepartureTime).IsRequired();
             builder.Property(r => r.ArrivalTime).IsRequired();
-            builder.Property(r => r.Price).IsRequired();
+            builder.Property(r => r.Price).IsRequired()
+                   .HasColumnType("decimal(18, 2)");
 
             builder.HasMany(t => t.Tickets)
                    .WithOne(r => r.Route)

@@ -17,12 +17,6 @@ namespace BusTickets.Infrastructure.Data.EntityTypeConfigurations
             builder.Property(s => s.SeatNumber).IsRequired();
             builder.Property(s => s.IsBooked).IsRequired();
             builder.Property(s=> s.SeatType).IsRequired();
-
-            builder.HasOne(s => s.Bus)
-                   .WithMany(b => b.Seats)
-                   .HasForeignKey(s => s.BusId)
-                   .IsRequired()
-                   .OnDelete(DeleteBehavior.Cascade);
         }
     }
 }

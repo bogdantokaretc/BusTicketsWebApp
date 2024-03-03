@@ -16,7 +16,6 @@ namespace BusTickets.Infrastructure.Data.EntityTypeConfigurations
             builder.HasKey(b => b.Id);
             builder.Property(b => b.BusNumber).IsRequired();
             builder.Property(b => b.BusModel).IsRequired();
-            builder.Property(b => b.Seats).IsRequired();
             builder.Property(b=>b.Carrier).IsRequired();
 
             builder.HasMany(b => b.Seats)
