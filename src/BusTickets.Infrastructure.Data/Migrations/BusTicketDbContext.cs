@@ -1,4 +1,6 @@
 ﻿using BusTickets.Domain.Entities;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -8,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace BusTickets.Infrastructure.Data.Migrations
 {
-    public class BusTicketDbContext: DbContext
+    public class BusTicketDbContext: IdentityDbContext<IdentityUser>
     {
         public BusTicketDbContext(DbContextOptions<BusTicketDbContext> options): base(options){}
 

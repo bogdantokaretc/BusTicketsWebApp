@@ -9,7 +9,7 @@ namespace BusTickets.Domain.Entities
     public class Ticket
     {
         public int Id { get; set; }
-        public int PassengerId { get; set; }
+        public string PassengerId { get; set; }
         public Passenger Passenger { get; set; }
         public int BusId { get; set; }
         public Bus Bus { get; set; }
